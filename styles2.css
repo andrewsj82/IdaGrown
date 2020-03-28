@@ -1,0 +1,140 @@
+body {
+    background-color: white;
+    z-index: -1;
+}
+
+header .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(2, 75px);
+    position: relative;
+    height: 150px;
+    background-image: url("images/plantBackground.png");
+    background-repeat: no-repeat;
+    background: cover;
+    border: 6px solid rgb(58, 189, 41);
+    color: white;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+header .gridContainer1 {
+    grid-column-start: 1 span 1;
+    grid-column-end: 2;
+    grid-row-start: 1 span 2;
+    grid-row-end: 3;
+    z-index: 2;
+}
+
+header .gridContainer2 {
+    grid-column-start: 2 span 3;
+    grid-column-end: 5;
+    grid-row-start: 1 span 1;
+    grid-row-end: 2;
+    z-index: 3;
+}
+
+header .gridContainer3 {
+    grid-column-start: 5 span 2;
+    grid-column-end: 7;
+    grid-row-start: 1 span 1;
+    grid-row-end: 2;
+}
+
+header .gridContainer4 {
+    grid-column-start: 2 span 4;
+    grid-column-end: 7;
+    grid-row-start: 2 span 1;
+    grid-row-end: 3;
+}
+
+header .logo {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+header .textLogo {
+    display: inline-flex;
+    position: absolute;
+    width: 85%;
+    height: 120px;
+    z-index: 3;
+}
+
+header .cartSearch nav {
+    display: inline-flex;
+    position: absolute;
+    z-index: 4;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    
+    padding: 10px;
+    margin-top: 100px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li:hover {
+    background-color: #FFFFFF35;
+}
+
+section .scrollableBanner {
+    background-color: rgba(241, 107, 107, 0.208);
+}
+
+main {
+    color:black;
+    font-size: 2em;
+}
+
+.newestMedia img {
+    align-content: right;
+}
+
+.footerContainer {
+    background-color: rgb(58, 189, 41);
+    width: 100%;
+    height: 90px;
+    display: inline-flex;
+}
+
+footer .smallLogo {
+    margin-top: 10px;
+    height: 70px;
+    width: 70px;
+    display: inline-flex;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 65px;
+}
+
+footer a:hover {
+    background-color: #FFFFFF35;
+}
+
+footer .address {
+    display: inline-flex;
+    color: white;
+    font-size: smaller;
+    text-align: right;
+    margin-top: 35px;
+    margin-left: 15px;
+}
